@@ -1,0 +1,9 @@
+/* qui aggiungo i miei stili personali */
+
+.box{
+  padding: 15px;
+  background-color:#006cfa;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+}
