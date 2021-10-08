@@ -6,49 +6,112 @@
 }
 
 .container{
-  width: 1170px;
+  width: 1170px;/*qunado la pagina è aperta allora larghezza fissa*/
+  max-width: 100%;/*%=ridimensionamento*/
   margin: 0 auto;
 }
 
-.row{
+.container .row{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+/*colonna a dimensione non elastica*/
+[class *='col-']{
+  flex: 0 0 auto;  
+}
 
+/*colonna a dimensione elastica*/
+.col{
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+/*queste classi non vanno toccate,se voglio creare un eccezione creo un'altra classe  e la modifico col css*/
+
+/*COL*/
 .col-1{
   flex-basis: calc((100% / 12) * 1);
+  max-width: calc((100% / 12) * 1); /*non spacca la row se il tempo è grande*/
 }
 .col-2{
   flex-basis: calc((100% / 12) * 2);
+  max-width: calc((100% / 12) * 2);
 }
 .col-3{
   flex-basis: calc((100% / 12) * 3);
+  max-width: calc((100% / 12) * 3);
 }
 .col-4{
   flex-basis: calc((100% / 12) * 4);
+  max-width: calc((100% / 12) * 4);
 }
 .col-5{
   flex-basis: calc((100% / 12) * 5);
+  max-width: calc((100% / 12) * 5);
 }
 .col-6{
   flex-basis: calc((100% / 12) * 6);
+  max-width: calc((100% / 12) * 16);
 }
 .col-7{
   flex-basis: calc((100% / 12) * 7);
+  max-width: calc((100% / 12) * 7);
 }
 .col-8{
   flex-basis: calc((100% / 12) * 8);
+  max-width: calc((100% / 12) * 8);
 }
 .col-9{
   flex-basis: calc((100% / 12) * 9);
+  max-width: calc((100% / 12) * 9);
 }
 .col-10{
   flex-basis: calc((100% / 12) * 10);
+  max-width: calc((100% / 12) * 10);
 }
 .col-11{
   flex-basis: calc((100% / 12) * 11);
+  max-width: calc((100% / 12) * 11);
 }
 .col-12{
   flex-basis: calc((100% / 12) * 12);
+  max-width: calc((100% / 12) * 12);
+}
+
+
+/*OFFSET*/
+.col-offset-1 {
+  margin-left: calc((100% / 12)* 1);
+}
+.col-offset- 2{
+  margin-left: calc((100% / 12)*2 );
+}
+.col-offset-3 {
+  margin-left: calc((100% / 12)*3 );
+}
+.col-offset-4 {
+  margin-left: calc((100% / 12)*4 );
+}
+.col-offset-5 {
+  margin-left: calc((100% / 12)*5 );
+}
+.col-offset-6 {
+  margin-left: calc((100% / 12)*6 );
+}
+.col-offset-7 {
+  margin-left: calc((100% / 12)*7 );
+}
+.col-offset-8 {
+  margin-left: calc((100% / 12)*8 );
+}
+.col-offset-9 {
+  margin-left: calc((100% / 12)*9 );
+}
+.col-offset-10 {
+  margin-left: calc((100% / 12)*10 );
+}
+.col-offset-11 {
+  margin-left: calc((100% / 12)*11);
 }

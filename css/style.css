@@ -1,9 +1,16 @@
 /* qui aggiungo i miei stili personali */
 
-.box{
+.box, 
+.box-nesting
+{
   padding: 15px;
   background-color:#006cfa;
   color: white;
   text-align: center;
   border: 1px solid white;
+}
+
+
+.box-nesting{
+  background-color: yellowgreen;
 }
