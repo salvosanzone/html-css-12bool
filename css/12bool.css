@@ -7,7 +7,7 @@
 
 .container{
   width: 1170px;/*qunado la pagina è aperta allora larghezza fissa*/
-  max-width: 100%;/*%=ridimensionamento*/
+  max-width: 100%;/* %=ridimensionamento */
   margin: 0 auto;
 }
 
@@ -30,10 +30,10 @@
 
 /*queste classi non vanno toccate,se voglio creare un eccezione creo un'altra classe  e la modifico col css*/
 
-/*COL*/
+/*COL GLOBALI NO RESPONSIVE*/
 .col-1{
   flex-basis: calc((100% / 12) * 1);
-  max-width: calc((100% / 12) * 1); /*non spacca la row se il tempo è grande*/
+  max-width: calc((100% / 12) * 1); /*non spacca la row se il testo è grande*/
 }
 .col-2{
   flex-basis: calc((100% / 12) * 2);
@@ -81,7 +81,7 @@
 }
 
 
-/*OFFSET*/
+/*OFFSET GLOBALI NO RESPONSIVE*/
 .col-offset-1 {
   margin-left: calc((100% / 12)* 1);
 }
@@ -114,4 +114,135 @@
 }
 .col-offset-11 {
   margin-left: calc((100% / 12)*11);
+}
+
+/* COL RESPONSIVE*/  /* xs=default*/
+.col-xs-1{
+  flex-basis: calc((100% / 12) * 1);
+  max-width: calc((100% / 12) * 1); 
+}
+.col-xs-2{
+  flex-basis: calc((100% / 12) * 2);
+  max-width: calc((100% / 12) * 2);
+}
+.col-xs-3{
+  flex-basis: calc((100% / 12) * 3);
+  max-width: calc((100% / 12) * 3);
+}
+.col-xs-4{
+  flex-basis: calc((100% / 12) * 4);
+  max-width: calc((100% / 12) * 4);
+}
+.col-xs-5{
+  flex-basis: calc((100% / 12) * 5);
+  max-width: calc((100% / 12) * 5);
+}
+.col-xs-6{
+  flex-basis: calc((100% / 12) * 6);
+  max-width: calc((100% / 12) * 16);
+}
+.col-xs-7{
+  flex-basis: calc((100% / 12) * 7);
+  max-width: calc((100% / 12) * 7);
+}
+.col-xs-8{
+  flex-basis: calc((100% / 12) * 8);
+  max-width: calc((100% / 12) * 8);
+}
+.col-xs-9{
+  flex-basis: calc((100% / 12) * 9);
+  max-width: calc((100% / 12) * 9);
+}
+.col-xs-10{
+  flex-basis: calc((100% / 12) * 10);
+  max-width: calc((100% / 12) * 10);
+}
+.col-xs-11{
+  flex-basis: calc((100% / 12) * 11);
+  max-width: calc((100% / 12) * 11);
+}
+.col-xs-12{
+  flex-basis: calc((100% / 12) * 12);
+  max-width: calc((100% / 12) * 12);
+}
+.col-xs-offset-1 {
+  margin-left: calc((100% / 12)* 1);
+}
+.col-xs-offset- 2{
+  margin-left: calc((100% / 12)*2 );
+}
+.col-xs-offset-3 {
+  margin-left: calc((100% / 12)*3 );
+}
+.col-xs-offset-4 {
+  margin-left: calc((100% / 12)*4 );
+}
+.col-xs-offset-5 {
+  margin-left: calc((100% / 12)*5 );
+}
+.col-xs-offset-6 {
+  margin-left: calc((100% / 12)*6 );
+}
+.col-xs-offset-7 {
+  margin-left: calc((100% / 12)*7 );
+}
+.col-xs-offset-8 {
+  margin-left: calc((100% / 12)*8 );
+}
+.col-xs-offset-9 {
+  margin-left: calc((100% / 12)*9 );
+}
+.col-xs-offset-10 {
+  margin-left: calc((100% / 12)*10 );
+}
+.col-xs-offset-11 {
+  margin-left: calc((100% / 12)*11);
+}
+.col-md-1{
+  flex-basis: calc((100% / 12) * 1);
+  max-width: calc((100% / 12) * 1); 
+}
+.col-md-2{
+  flex-basis: calc((100% / 12) * 2);
+  max-width: calc((100% / 12) * 2);
+}
+.col-md-3{
+  flex-basis: calc((100% / 12) * 3);
+  max-width: calc((100% / 12) * 3);
+}
+.col-md-4{
+  flex-basis: calc((100% / 12) * 4);
+  max-width: calc((100% / 12) * 4);
+}
+.col-md-5{
+  flex-basis: calc((100% / 12) * 5);
+  max-width: calc((100% / 12) * 5);
+}
+.col-md-6{
+  flex-basis: calc((100% / 12) * 6);
+  max-width: calc((100% / 12) * 16);
+}
+.col-md-7{
+  flex-basis: calc((100% / 12) * 7);
+  max-width: calc((100% / 12) * 7);
+}
+.col-md-8{
+  flex-basis: calc((100% / 12) * 8);
+  max-width: calc((100% / 12) * 8);
+}
+.col-md-9{
+  flex-basis: calc((100% / 12) * 9);
+  max-width: calc((100% / 12) * 9);
+}
+.col-md-10{
+  flex-basis: calc((100% / 12) * 10);
+  max-width: calc((100% / 12) * 10);
+}
+.col-md-11{
+  flex-basis: calc((100% / 12) * 11);
+  max-width: calc((100% / 12) * 11);
+}
+.col-md-12{
+  flex-basis: calc((100% / 12) * 12);
+  max-width: calc((100% / 12) * 12);
 }
